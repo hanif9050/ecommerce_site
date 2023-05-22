@@ -27,6 +27,17 @@ img{
     justify-content: space-around;
     align-items: center;
 }
+.btn{
+    border: none;
+    padding: var(--padding);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: var(--transition);
+
+}
+.btn:hover{
+    background-color: var(--secondary-color);
+}
 /* reset code and common ends here */
 
 /* nav starts here */
@@ -78,10 +89,30 @@ nav{
     font-size: 2rem;
 }
 /* nav ends here */
+
+/* footer starts here */
+.footer{
+    background-color: var(--primary-color);
+    padding: 1rem;
+    font-size: 1.1rem;
+    min-height: 10vh;
+    color: white;
+}
+.btn-subscribe{
+    margin-left: -5px;
+}
+.footer_input{
+    border: none;
+    padding: var(--padding);
+    width: 20rem;
+
+}
+/* footer ends here */
 @media screen and (max-width:992px) {
     .flex-space-around{
         flex-direction: column;
         gap: 1rem;
+        padding: 1rem 0;
     }
 }
 @media screen and (max-width:768px) {
